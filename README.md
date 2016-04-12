@@ -9,6 +9,5 @@ SJUG 15-04-2016
 * [For simple scripts](https://github.com/repat/README-template/blob/master/README-script.md)
 
 ## Contact
-#### repat
-* http://waszczyk.com
+* Website: http://waszczyk.com
 * Twitter: [@Boomattache](https://twitter.com/boomattache "Boomattache on twitter")
