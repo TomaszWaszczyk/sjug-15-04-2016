@@ -241,17 +241,17 @@ Sldie notes, preseenter view "s"
 				<section>
 					<h2>Lombok</h2>
 					<pre><code data-trim data-noescape>
-						@Getter
-						@Setter
-						@NoArgsConstructor
-						@AllArgsConstructor
-						@Builder
-						public class AlarmsSearchCriteria {
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class AlarmsSearchCriteria {
 
-						private Pageable pageable;
-						private AlarmsSearchCriteriaOrderBy alarmsSearchCriteriaOrderBy;
-						private OrderByDirection orderByDirection;
-						}
+	private Pageable pageable;
+	private AlarmsSearchCriteriaOrderBy alarmsSearchCriteriaOrderBy;
+	private OrderByDirection orderByDirection;
+}
 					</code>
 					</pre>
 				</section>
@@ -259,23 +259,23 @@ Sldie notes, preseenter view "s"
 				<section>
 					<h2>Gulp</h2>
 					<pre><code data-trim data-noescape>
-						gulp.task('run.build', ['build', 'prepare.selenium'], function () {
-						return gulp.src('build')
-						.pipe(webserver({
-						host: '0.0.0.0',
-						port: 8001,
-						livereload: true,
-						//livereload: {
-						// filter: 'modules/**/*'
-						//},
-						//directoryListing: true,
-						//open: true,
-						fallback: 'index.html',
-						proxies: [
-						{source: '/app', target: API_SERVER + '/app'}
-						]
-						}));
-						});
+gulp.task('run.build', ['build', 'prepare.selenium'], function () {
+	return gulp.src('build')
+	.pipe(webserver({
+	host: '0.0.0.0',
+	port: 8001,
+	livereload: true,
+	//livereload: {
+	// filter: 'modules/**/*'
+	//},
+	//directoryListing: true,
+	//open: true,
+	fallback: 'index.html',
+	proxies: [
+	{source: '/app', target: API_SERVER + '/app'}
+	]
+	}));
+});
 					</code>
 					</pre>
 				</section>
@@ -314,20 +314,20 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
 				<section>
 					<h2>Configuration</h2>
     <pre><code data-trim data-noescape>
-		.run(function ($ionicPlatform) {
-		$ionicPlatform.ready(function () {
-		// Hide the accessory bar by default
-		//(remove this to show the accessory bar above the keyboard
-		// for form inputs)
-		<mark>if (window.cordova && window.cordova.plugins.Keyboard) {</mark>
-		cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-		}
-		if (window.StatusBar) {
-		// org.apache.cordova.statusbar required
-		StatusBar.styleDefault();
-		}
-		});
-		})
+.run(function ($ionicPlatform) {
+	$ionicPlatform.ready(function () {
+	// Hide the accessory bar by default
+	//(remove this to show the accessory bar above the keyboard
+	// for form inputs)
+	<mark>if (window.cordova && window.cordova.plugins.Keyboard) {</mark>
+	cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+	}
+	if (window.StatusBar) {
+	// org.apache.cordova.statusbar required
+	StatusBar.styleDefault();
+	}
+	});
+})
 	</code></pre>
 				</section>
 
@@ -335,14 +335,14 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
 					<h2>Futher configuration</h2>
 					<section>
     <pre><code data-trim data-noescape>
-		.config(function ($stateProvider, $urlRouterProvider) {
-		$stateProvider
-		.state('mmdc', {
-		url : "/app",
-		abstract : true,
-		templateUrl: "core.menu.html",
-		controller : 'MainCtrl'
-		})
+.config(function ($stateProvider, $urlRouterProvider) {
+	$stateProvider
+	.state('mmdc', {
+	url : "/app",
+	abstract : true,
+	templateUrl: "core.menu.html",
+	controller : 'MainCtrl'
+})
 	</code></pre>
 					</section>
 				</section>
